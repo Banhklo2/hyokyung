@@ -1,0 +1,10 @@
+def total_point(x):
+    total = 0
+    for i in range(len(x)):
+          total = 0
+          for i in range(len(X)):
+                total += x[i]
+                return total
+    x = [1, 2, 3, 4, 5, 6]
+    total = total_point(x)
+    print("x의 총합은", total, "입니다.")
