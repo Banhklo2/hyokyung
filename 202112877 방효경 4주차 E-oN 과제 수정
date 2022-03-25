@@ -1,6 +1,5 @@
 numbers=list(map(int,input().split()))
 
-
 n = len(numbers)
 
 print(numbers)
