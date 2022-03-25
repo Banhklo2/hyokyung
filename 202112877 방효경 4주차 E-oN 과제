@@ -1,0 +1,12 @@
+numbers=[1, 5, 7, 6, 3, 2]
+
+n = len(numbers)
+
+print(numbers)
+
+for i in range (n-1):
+    for j in range (0, n-1-i):
+        if numbers[j] > numbers[j+1]:
+            numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
+
+print(numbers)
