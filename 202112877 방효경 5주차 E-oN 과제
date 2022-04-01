@@ -1,0 +1,11 @@
+numbers=list(map(int,input(). split()))
+i, j, k = map(int,input("i, j, k번째 숫자를 입력하세요. : "). split())
+
+print(numbers)
+
+def solution ():
+    arr = numbers[i-1 :j]
+    arr.sort()
+    print(arr[k-1])
+
+solution()
