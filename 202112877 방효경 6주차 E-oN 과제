@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int fact(int n) {
+    int result = 1;
+    while (n > 0) {
+        result = result * n;
+        n--;
+    }
+    return result;
+}
+
+int main() {
+    int n;
+    int count = 0;
+    int one_count;
+    int two_count = 1;
+
+    scanf("%d", &n);
+
+    count++;
+    while (two_count * 2 <= n) {
+        one_count = n - two_count * 2;
+        count += fact(n - two_count) / ((fact(one_count)) * fact(two_count));
+        two_count++;
+    }
+    printf("%d\n", count);
+}
