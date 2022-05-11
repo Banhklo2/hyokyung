@@ -1,9 +1,6 @@
 # E-oN 7주차 과제
 #202112877 방효경
 
-# E-oN 7주차 과제
-#202112877 방효경
-
 class library :
     def _init_(self, book, author, year, publisher, genre) :
         self.book = book
